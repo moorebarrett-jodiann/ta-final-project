@@ -18,6 +18,7 @@
 
     --app-light-text-color: #f1f2f3;
     --app-dark-text-color: #1c1c1c;
+    --app-light-grey-text-color: #767676;
     --app-grey-text-color: #343434;
 
     --app-letter-spacing: 0.2px;
@@ -60,6 +61,8 @@ h2.sub-heading {
     font-size: var(--app-h2-font-size);
     font-weight: var(--app-h2-font-weight);
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 /**************************************************/
