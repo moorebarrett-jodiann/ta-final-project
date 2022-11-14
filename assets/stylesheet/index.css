@@ -34,6 +34,7 @@
 .projects-container {
     text-align: center;
     height: 100vh;
+    background: radial-gradient(#e4ecf6, #f1f4fb);
 }
 
 .projects-container .row .card {
@@ -42,13 +43,6 @@
     box-shadow: 0 20px 48px 0 var(--app-shadow-color);
     transition: transform 450ms;
     padding: 20px;
-}
-
-.projects-container .row .card h3 {
-    font-size: var(--app-main-font-size);
-    font-weight: 700;
-    color: var(--app-blue);
-    text-transform: uppercase;
 }
 
 .projects-container .row .card p {
@@ -63,11 +57,6 @@
 
 .projects-container .row .card div.top p{
     margin: 10px 0 20px 0;
-}
-
-.projects-container .row .card div.top p span{
-    font-size: 10px;
-    color: var(--app-dark-text-color);
 }
 
 .projects-container .row .card div.top {
@@ -85,7 +74,7 @@
     border-radius: 5px;    
     text-align: center;
     width: 100px;
-    background-color: var(--app-green);
+    background-color: var(--app-yellow);
     margin-top: 10px;
     padding: 5px 10px; 
     transition: background-color 0.25s ease-in-out;   
@@ -94,12 +83,46 @@
 .card-btn a {
     font-size: 14px;
     font-weight: 700;
-    color: var(--app-light-text-color);
+    color: var(--app-dark-text-color);
     text-decoration: none;
 }
 
 .card-btn:hover { 
-    background-color: var(--app-blue);
+    background-color: var(--app-yellow-hover);
     cursor: pointer;
-    color: var(--app-light-text-color);
+}
+
+.projects-container .row .card .price {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.projects-container .row .card .price .dollar {
+    font-size: .83em;
+    vertical-align: baseline;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--app-light-blue);
+}
+
+.projects-container .row .card .price .money {
+    font-size: 40px;
+    font-weight: var(--app-h2-font-weight);
+    color: var(--app-light-blue);
+}
+
+.projects-container .row .card .price .pay-per {
+    font-size: var(--app-p-font-size);
+    font-weight: var(--app-p-font-weight);
+    color: var(--app-grey-text-color);
+    position: relative;
+    bottom: -1.4em;
+}
+
+.projects-container .row .card .bold-p {
+    font-size: var(--app-p-font-size);
+    font-weight: 600;
+    color: var(--app-yellow-hover);
 }

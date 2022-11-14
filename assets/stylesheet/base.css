@@ -8,9 +8,11 @@
 
     --app-white:#eef0f2;
     --app-yellow:#eec643;
+    --app-yellow-hover:#f4c428;
     --app-black:#232323;
     --app-blue:#22314d;
     --app-dark-blue:#011638;
+    --app-light-blue:#0956d2;
 
     --app-btn-height: 46px;
 
@@ -53,8 +55,8 @@
 }
 
 h2.sub-heading {
-    margin: 40px 0px;
-    color: var(--app-yellow);    
+    padding: 40px 0px;
+    color: var(--app-dark-blue);    
     font-size: var(--app-h2-font-size);
     font-weight: var(--app-h2-font-weight);
     text-transform: uppercase;
