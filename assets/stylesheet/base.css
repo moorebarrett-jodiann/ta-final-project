@@ -52,6 +52,11 @@
     justify-content: space-between;
 }
 
+h2.sub-heading {
+    margin: 40px 0px;
+    color: var(--app-yellow);    
+}
+
 /**************************************************/
 /*****      HEADER and NAV                   ******/
 /**************************************************/
@@ -141,6 +146,45 @@ header h1 {
         color: var(--app-white);
     }
 }
+
+
+/**************************************************/
+/*****      FLEX CARDS                       ******/
+/**************************************************/
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* flex cards with screen width 800px and up */
+@media (min-width: 801px) {
+    .row .card {
+        width: calc(25% - 15px);
+    }
+}
+
+/* flex cards with screen width 801px and down */
+@media (max-width: 800px) {
+    .row .card {
+        width: calc(50% - 10px);
+    }
+}
+
+/* flex cards with screen width 480px and down */
+@media (max-width: 480px) {
+    .row .card {
+        width: 100%;
+    }
+}
+
 
 /**************************************************/
 /*****      FOOTER                           ******/
