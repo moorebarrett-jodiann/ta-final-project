@@ -8,14 +8,17 @@
 
     --app-white:#eef0f2;
     --app-yellow:#eec643;
+    --app-yellow-hover:#f4c428;
     --app-black:#232323;
     --app-blue:#22314d;
     --app-dark-blue:#011638;
+    --app-light-blue:#0956d2;
 
     --app-btn-height: 46px;
 
     --app-light-text-color: #f1f2f3;
     --app-dark-text-color: #1c1c1c;
+    --app-light-grey-text-color: #767676;
     --app-grey-text-color: #343434;
 
     --app-letter-spacing: 0.2px;
@@ -50,6 +53,16 @@
 .flexbox {
     display: flex;
     justify-content: space-between;
+}
+
+h2.sub-heading {
+    padding: 40px 0px;
+    color: var(--app-dark-blue);    
+    font-size: var(--app-h2-font-size);
+    font-weight: var(--app-h2-font-weight);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 /**************************************************/
@@ -141,6 +154,45 @@ header h1 {
         color: var(--app-white);
     }
 }
+
+
+/**************************************************/
+/*****      FLEX CARDS                       ******/
+/**************************************************/
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.row .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* flex cards with screen width 800px and up */
+@media (min-width: 801px) {
+    .row .card {
+        width: calc(25% - 15px);
+    }
+}
+
+/* flex cards with screen width 801px and down */
+@media (max-width: 800px) {
+    .row .card {
+        width: calc(50% - 10px);
+    }
+}
+
+/* flex cards with screen width 480px and down */
+@media (max-width: 480px) {
+    .row .card {
+        width: 100%;
+    }
+}
+
 
 /**************************************************/
 /*****      FOOTER                           ******/
