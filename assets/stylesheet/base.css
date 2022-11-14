@@ -9,7 +9,7 @@
     --app-white:#eef0f2;
     --app-yellow:#eec643;
     --app-black:#232323;
-    --app-blue:#0d21a1;
+    --app-blue:#22314d;
     --app-dark-blue:#011638;
 
     --app-btn-height: 46px;
@@ -19,7 +19,9 @@
     --app-grey-text-color: #343434;
 
     --app-letter-spacing: 0.2px;
-    --app-line-height: 56px;
+    --app-header-line-height: 56px;
+    --app-main-line-height: 35px;
+    --app-footer-line-height: 112px;
 
     --app-h1-font-size: 24px;
     --app-h1-font-weight: 700;
@@ -55,7 +57,7 @@
 /**************************************************/
 
 header {
-    line-height: var(--app-line-height);
+    line-height: var(--app-header-line-height);
     height: 56px;
     background-color: var(--app-dark-blue);
 }
@@ -138,4 +140,40 @@ header h1 {
         display: block;
         color: var(--app-white);
     }
+}
+
+/**************************************************/
+/*****      FOOTER                           ******/
+/**************************************************/
+
+footer {
+    line-height: var(--app-footer-line-height);
+    height: 112px;
+    background-color: var(--app-blue);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li + li {
+    margin-left: 18px;
+}
+
+footer ul li a {
+    font-size: var(--app-main-font-size);
+    font-weight: 600;
+    letter-spacing: var(--app-letter-spcaing);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--app-white);
+    position: relative;
+}
+
+footer p {
+ color: var(--app-white);
 }
