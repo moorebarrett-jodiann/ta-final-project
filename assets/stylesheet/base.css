@@ -55,6 +55,9 @@
 h2.sub-heading {
     margin: 40px 0px;
     color: var(--app-yellow);    
+    font-size: var(--app-h2-font-size);
+    font-weight: var(--app-h2-font-weight);
+    text-transform: uppercase;
 }
 
 /**************************************************/
