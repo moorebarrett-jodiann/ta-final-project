@@ -31,6 +31,15 @@
     --app-small-font-size: 15px;
 }
 
+/**************************************************/
+/*****      MAIN                             ******/
+/**************************************************/
+
+.main {
+    display: grid;
+    place-items: center;    
+}
+
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
@@ -38,15 +47,95 @@
 
 .flexbox {
     display: flex;
+    justify-content: space-between;
 }
 
+/**************************************************/
+/*****      HEADER and NAV                   ******/
+/**************************************************/
+
 header {
-    line-height: var(--app-header-line-height);
+    line-height: var(--app-line-height);
     height: 56px;
+    background-color: var(--app-dark-blue);
 }
 
 header h1 {
     text-transform: uppercase;
     font-size: var(--app-h1-font-size);
     font-weight: var(--app-h1-font-weight);
+    color: var(--app-white);
+}
+
+/* Show reular nav menu when screen width is 923px and above */
+@media only screen and (min-width: 923px) { 
+
+    .burger-menu i {
+        display: none;
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li + li {
+        margin-left: 18px;
+    }
+    
+    nav ul li a {
+        font-size: var(--app-main-font-size);
+        font-weight: 600;
+        letter-spacing: var(--app-letter-spcaing);
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--app-white);
+        position: relative;
+    }
+
+    /* Scale from center */
+    nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.1em;
+        background-color: var(--app-white);
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    nav ul li a::after {
+        opacity: 1;
+        transform: scale(0);
+        transform-origin: center;
+    }
+    
+    nav ul li a:hover::after,
+    nav ul li a:focus::after{
+        transform: scale(1);
+    }
+}
+
+/* Show hamburger icon when screen width is below 922px */
+@media only screen and (max-width: 922px) {
+    nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        color: var(--app-white);
+        font-size: var(--app-main-font-size);
+        line-height:  var(--app-line-height);
+    }
+    
+    .burger-menu:hover {
+        display: block;
+        color: var(--app-white);
+    }
 }
