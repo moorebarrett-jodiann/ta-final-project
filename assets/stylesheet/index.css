@@ -34,7 +34,13 @@
 .projects-container {
     text-align: left;
     height: 100vh;
-    background: radial-gradient(#e4ecf6, #f1f4fb);
+    background-color: var(--app-light-text-color);
+}
+
+.projects-container .container {
+    text-align: left;
+    height: 100vh;
+    background-color: var(--app-light-text-color);
 }
 
 .projects-container .row .card {
@@ -68,6 +74,10 @@
 
 .projects-container .row .card div.top {
     flex: 1;
+}
+  
+.projects-container .row .card div.top div + div {
+    border-top: 1px solid rgb(225, 225, 226);
 }
   
 .projects-container .row .card .bottom {
@@ -104,8 +114,6 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    border-bottom: 1px solid rgb(225, 225, 226);
-    border-top: 1px solid rgb(225, 225, 226);
 }
 
 .projects-container .row .card .price .dollar {
@@ -139,8 +147,10 @@
 }
 
 .projects-container .row .card .features p {
-    padding: 5px 0px;
-    border-top: 1px solid rgb(225, 225, 226);
     line-height: var(--app-main-line-height);
     margin: 0px auto;
+}
+
+.projects-container .row .card .features p i {
+    color: var(--app-light-blue);
 }
