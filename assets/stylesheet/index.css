@@ -1,7 +1,8 @@
 @import "./base.css";
+@import "./products.css";
 
 /**************************************************/
-/*****      HEADER and NAV                   ******/
+/*****      HEADER AND NAV                   ******/
 /**************************************************/
 
 .hero {
@@ -27,130 +28,12 @@
     z-index: -1;
 }
 
-/**************************************************/
-/*****      PRODUCTS                         ******/
-/**************************************************/
-
-.projects-container {
-    text-align: left;
-    height: 100vh;
-    background-color: var(--app-light-text-color);
-}
-
-.projects-container .container {
-    text-align: left;
-    height: 100vh;
-    background-color: var(--app-light-text-color);
-}
-
-.projects-container .row .card {
-    border-radius: 5px;
-    background-color: var(--app-light-text-color);
-    box-shadow: 0 20px 48px 0 var(--app-shadow-color);
-    transition: transform 450ms;
-    padding: 20px;
-}
-
-.projects-container .row .card h3 {
-    font-size: 14px;
-    font-weight: var(--app-h1-font-weight);
-    color: var(--app-light-grey-text-color);
-    text-transform: uppercase;
-}
-
-.projects-container .row .card p {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--app-dark-grey-bg);
-}
-
-.projects-container .row .card:hover {
-    transform: translateY(-10px);
-}
-
-.projects-container .row .card div.top p {
-    margin: 10px 0 10px 0;
-}
-
-.projects-container .row .card div.top {
-    flex: 1;
-}
-  
-.projects-container .row .card div.top div + div {
-    border-top: 1px solid rgb(225, 225, 226);
-}
-  
-.projects-container .row .card .bottom {
-    flex: none;
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid rgb(225, 225, 226);
-    padding: 20px 0px;
-}
-
-.card-btn { 
-    display: inline-block;
-    border-radius: 5px;    
-    text-align: center;
-    width: 100%;
-    background-color: var(--app-yellow);
-    padding: 5px 10px; 
-    transition: background-color 0.25s ease-in-out;  
-}
-
-.card-btn a {
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--app-dark-text-color);
-    text-decoration: none;
-}
-
-.card-btn:hover { 
-    background-color: var(--app-yellow-hover);
-    cursor: pointer;
-}
-
-.projects-container .row .card .price {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.projects-container .row .card .price .dollar {
-    font-size: .83em;
-    vertical-align: baseline;
+h1 .company-logo {
+    font-family: 'Megrim', cursive;
+    font-size: 40px;
+    font-style: italic;
     position: relative;
-    font-size: 21px;
-    font-weight: 600;
-    color: var(--app-light-blue);
+    top: 10px;
+    left: 10px;
 }
 
-.projects-container .row .card .price .money {
-    font-size: 50px;
-    font-weight: var(--app-h2-font-weight);
-    color: var(--app-light-blue);
-}
-
-.projects-container .row .card .price .pay-per {
-    font-size: var(--app-p-font-size);
-    font-weight: var(--app-p-font-weight);
-    color: var(--app-grey-text-color);
-    position: relative;
-    bottom: -2em;
-}
-
-.projects-container .row .card .bold-p {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--app-yellow-hover);
-    display: block;
-}
-
-.projects-container .row .card .features p {
-    line-height: var(--app-main-line-height);
-    margin: 0px auto;
-}
-
-.projects-container .row .card .features p i {
-    color: var(--app-light-blue);
-}
