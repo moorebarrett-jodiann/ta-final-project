@@ -56,12 +56,6 @@
     resize: none;
 }
 
-.submit{
-    margin-top: 20px;
-    width: 70px;
-    height: 45px;
-}
-
 /*Side text*/
 
 .box-2{
@@ -77,4 +71,4 @@ p{
     font-size:  var(--app-p-font-size);
 }
 
-/*respont message*/
+/*response message*/
