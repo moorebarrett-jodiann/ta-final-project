@@ -1,0 +1,117 @@
+
+/**************************************************/
+/*****      PRODUCTS                         ******/
+/**************************************************/
+
+.projects-container {
+    text-align: left;
+    padding: 60px 0px;
+    background-color: var(--app-light-text-color);
+}
+
+.projects-container .row .card {
+    border-radius: 10px;
+    transition: transform 450ms;
+    padding: 20px;
+    background-color: var(--app-light-text-color);
+    box-shadow: 0 10px 20px 0 rgba(146, 153, 197, 0.15);
+    margin-top: 40px;
+}
+
+.projects-container .row .card h3 {
+    font-size: 14px;
+    font-weight: var(--app-h1-font-weight);
+    color: var(--app-dark-blue);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(146, 153, 197, 0.2);
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container .row .card h3.featured {
+    color: var(--app-orange);
+    font-size: 20px;
+}
+
+.projects-container .row .card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(54, 53, 53);
+}
+
+.projects-container .row .card:hover {
+    transform: translateY(-10px);
+    border: 1px solid rgba(146, 153, 197, 0.15);
+}
+
+.projects-container .row .card div.top {
+    flex: 1;
+}
+
+.projects-container .row .card div.top p {
+    margin: 10px 0px;
+}
+
+.projects-container .row .card .bottom {
+    flex: none;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgb(225, 225, 226);
+    padding: 20px 0px;
+}
+
+.projects-container .row .card .bottom .btn {
+    width: 100%;
+}
+
+.projects-container .row .card .price {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(225, 225, 226);
+    background-color: rgba(1, 41, 254, 0.031);
+}
+
+.projects-container .row .card .price .dollar {
+    font-size: .83em;
+    vertical-align: baseline;
+    position: relative;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--app-light-blue);
+}
+
+.projects-container .row .card .price .money {
+    font-size: 50px;
+    font-weight: var(--app-h2-font-weight);
+    color: var(--app-light-blue);
+}
+
+.projects-container .row .card .price .pay-per {
+    font-size: var(--app-p-font-size);
+    font-weight: var(--app-p-font-weight);
+    color: var(--app-light-blue);
+    position: relative;
+    bottom: -2em;
+}
+
+.projects-container .row .card .specs span.bold-p {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--app-light-blue);
+    display: block;
+}
+
+.projects-container .row .card .features {
+    border-top: 1px solid rgb(225, 225, 226);
+}
+
+.projects-container .row .card .features p {
+    font-size: 13px;
+}
+
+.projects-container .row .card .features p i {
+    color: rgba(248, 133, 18, 0.4);
+    margin-right: 10px;
+}
