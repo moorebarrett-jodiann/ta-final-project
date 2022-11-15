@@ -10,31 +10,39 @@
 }
 
 .projects-container .row .card {
-    border-radius: 5px;
+    border-radius: 10px;
     transition: transform 450ms;
     padding: 20px;
     background-color: var(--app-light-text-color);
-    box-shadow: 0 20px 40px 0 rgba(146, 153, 197, 0.15);
+    box-shadow: 0 10px 20px 0 rgba(146, 153, 197, 0.15);
     margin-top: 40px;
 }
 
 .projects-container .row .card h3 {
     font-size: 14px;
     font-weight: var(--app-h1-font-weight);
-    color: var(--app-light-grey-text-color);
+    color: var(--app-dark-blue);
     text-transform: uppercase;
     border-bottom: 1px solid rgba(146, 153, 197, 0.2);
     padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container .row .card h3.featured {
+    color: var(--app-orange);
+    font-size: 20px;
 }
 
 .projects-container .row .card p {
     font-size: 14px;
     font-weight: 400;
-    color: var(--app-dark-grey-bg);
+    color: rgb(54, 53, 53);
 }
 
 .projects-container .row .card:hover {
-    transform: scale(1.08);
+    transform: translateY(-10px);
+    border: 1px solid rgba(146, 153, 197, 0.15);
 }
 
 .projects-container .row .card div.top {
@@ -53,11 +61,16 @@
     padding: 20px 0px;
 }
 
+.projects-container .row .card .bottom .btn {
+    width: 100%;
+}
+
 .projects-container .row .card .price {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     border-bottom: 1px solid rgb(225, 225, 226);
+    background-color: rgba(1, 41, 254, 0.031);
 }
 
 .projects-container .row .card .price .dollar {
@@ -78,7 +91,7 @@
 .projects-container .row .card .price .pay-per {
     font-size: var(--app-p-font-size);
     font-weight: var(--app-p-font-weight);
-    color: var(--app-grey-text-color);
+    color: var(--app-light-blue);
     position: relative;
     bottom: -2em;
 }
@@ -86,7 +99,7 @@
 .projects-container .row .card .specs span.bold-p {
     font-size: 14px;
     font-weight: 700;
-    color: var(--app-orange);
+    color: var(--app-light-blue);
     display: block;
 }
 
@@ -94,8 +107,11 @@
     border-top: 1px solid rgb(225, 225, 226);
 }
 
+.projects-container .row .card .features p {
+    font-size: 13px;
+}
+
 .projects-container .row .card .features p i {
-    color: var(--app-light-blue);
-    font-size: var(--app-p-font-size);
+    color: rgba(248, 133, 18, 0.4);
     margin-right: 10px;
 }

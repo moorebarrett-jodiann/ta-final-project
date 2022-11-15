@@ -87,16 +87,15 @@ span.sub-heading-line {
     display: inline-block;
     border-radius: 5px;    
     text-align: center;
-    width: 100%;
     background-color: var(--app-yellow);
     padding: 5px 10px; 
-    transition: background-color 0.25s ease-in-out;  
+    transition: background-color 0.4s ease-in-out;  
 }
 
 .btn a {
-    font-size: var(--app-small-font-size);
-    font-weight: 700;
-    color: var(--app-dark-text-color);
+    font-size: var(--app-p-font-size);
+    font-weight: 600;
+    color: var(--app-dark-blue);
     text-decoration: none;
 }
 
