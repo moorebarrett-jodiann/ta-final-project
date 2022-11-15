@@ -10,9 +10,9 @@ const email = document.querySelector('.email').value.trim();
 const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 
 validate.addEventListener('click', () =>{
-    if (firstName.value == ""){
+    if (firstName.value === ""){
         alert('Please add your First Name');
-    } else if (lastName.value == ""){
+    } else if (lastName.value === ""){
         alert('Please add your Last Name');
     } else if(email.length === 0) {
         alert('Please enter your email');
