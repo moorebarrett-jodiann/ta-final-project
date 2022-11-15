@@ -8,6 +8,7 @@
 
     --app-white:#eef0f2;
     --app-yellow:#eec643;
+    --app-orange:#f88512;
     --app-yellow-hover:#f4c428;
     --app-black:#232323;
     --app-blue:#22314d;
@@ -63,9 +64,9 @@
 
 .sub-heading h2 {
     padding: 20px 0px;
-    color: var(--app-dark-blue);
+    color: var(--app-light-blue);
     font-size: var(--app-h2-font-size);
-    font-weight: var(--app-h2-font-weight);
+    font-weight: var(--app-h1-font-weight);
     text-transform: uppercase;
     display: flex;
     justify-content: center;
