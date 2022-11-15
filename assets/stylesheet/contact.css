@@ -1,0 +1,77 @@
+@import "./base.css";
+
+.contact-body {
+    height: 100vh;
+    width: 100%;
+    background-color: #eef0f2;
+    padding: 40px 0px;
+}
+
+.contact-body .row {
+    margin: 40px 0px;
+}
+
+.contact-body .row .card {
+    display: grid;
+    place-items: center;
+}
+
+.contact-body .row .card .social-icons {
+    text-align: left;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contact form*/
+.contact-form {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.first-name, .last-name, .email{
+    border-bottom: 1px solid rgba(238, 198, 67, 0.2);
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.first-name, .last-name{
+    width: calc(50% - 5px);
+}
+
+.last-name{
+    margin-left: 5px;
+}
+
+.email{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.message{
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(238, 198, 67, 0.2);
+    resize: none;
+}
+
+/*Side text*/
+
+h2{
+    font-size: var(--app-h2-font-size);
+}
+
+p{
+    font-size:  var(--app-p-font-size);
+}
+
+/*response message*/

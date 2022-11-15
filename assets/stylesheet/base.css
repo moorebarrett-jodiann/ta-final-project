@@ -104,12 +104,24 @@ span.sub-heading-line {
     cursor: pointer;
 }
 
+/* .btn button {
+    font-size: var(--app-p-font-size);
+    font-weight: 600;
+    color: var(--app-dark-blue);
+    text-decoration: none;
+} */
+
 /**************************************************/
 /*****      HEADER and NAV                   ******/
 /**************************************************/
 
+.navigation {
+    z-index: 100;
+}
+
 header {
     background-color: var(--app-dark-blue);
+    min-width: 400px;
 }
 
 header .logo {
@@ -121,6 +133,10 @@ header .logo h1 {
     font-size: var(--app-h1-font-size);
     font-weight: var(--app-h1-font-weight);
     color: var(--app-white);
+}
+
+header .logo h1 a {
+    all: unset;
 }
 
 /* Show reular nav menu when screen width is 923px and above */
@@ -173,7 +189,7 @@ header .logo h1 {
         display: block;
         color: var(--app-white);
         font-size: var(--app-p-font-size);
-        line-height: var(--app-header-line-height);
+        line-height: 100px;
         transition: all 0.4s ease-in-out;
     }
     
