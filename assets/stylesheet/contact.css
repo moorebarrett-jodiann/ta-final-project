@@ -11,6 +11,11 @@
     margin: 40px 0px;
 }
 
+.contact-body .row .card {
+    display: grid;
+    place-items: center;
+}
+
 .center{
     display: flex;
     justify-content: center;
@@ -20,7 +25,7 @@
 /*contact form*/
 .contact-form {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .first-name, .last-name, .email{

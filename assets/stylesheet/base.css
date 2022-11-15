@@ -121,6 +121,7 @@ span.sub-heading-line {
 
 header {
     background-color: var(--app-dark-blue);
+    min-width: 400px;
 }
 
 header .logo {

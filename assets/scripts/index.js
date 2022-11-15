@@ -4,8 +4,8 @@ const validate = document.querySelector('.submit');
 
 const email = document.querySelector('.email');
 const firstName = document.querySelector('.first-name');
-const lastName = document.querySelector('last-name');
-const message = document.querySelector('message');
+const lastName = document.querySelector('.last-name');
+const message = document.querySelector('.message');
 
 validate.addEventListener('click', () =>{
     if (firstName.value == "" || lastName.value == ""){
