@@ -5,14 +5,19 @@ const validate = document.querySelector('.submit');
 const firstName = document.querySelector('.first-name');
 const lastName = document.querySelector('.last-name');
 const message = document.querySelector('.message');
-let email = document.querySelector('.email').value.trim();
+const email = document.querySelector('.email').value.trim();
 
 const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 
 validate.addEventListener('click', () =>{
-    if (firstName.value == "" || lastName.value == ""){
-        alert('Please add your full name')
+    if (firstName.value == ""){
+        alert('Please add your First Name');
     }
+    
+    if (lastName.value == ""){
+        alert('Please add your Last Name');
+    }
+    
     if(email.length === 0) {
         alert('Please enter your email');
     }
