@@ -16,6 +16,10 @@
     place-items: center;
 }
 
+.contact-body .row .card .social-icons {
+    text-align: left;
+}
+
 .center{
     display: flex;
     justify-content: center;
