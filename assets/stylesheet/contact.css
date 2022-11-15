@@ -1,4 +1,6 @@
-@import "./base.css";
+/**************************************************/
+/*****      CONTACTS                         ******/
+/**************************************************/
 
 .contact-body {
     height: 100vh;
@@ -18,6 +20,10 @@
 
 .contact-body .row .card .social-icons {
     text-align: left;
+}
+
+.contact-body .row .card .social-icons li i {
+    color: var(--app-light-blue);
 }
 
 .center{
