@@ -11,10 +11,10 @@ validate.addEventListener('click', () =>{
     if (firstName.value == "" || lastName.value == ""){
         alert('Please add your full name')
     }
-    else if(email.value.match(/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/)){
-        alert('Email is missiing or has been put in wrong')
-    }
     else if(message.value == ""){
         alert('Please add your message')
+    }
+    else{
+        alert('Message has been sent')
     }
 })

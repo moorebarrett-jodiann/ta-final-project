@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="assets/stylesheet/index.css" media="all"/>
+        <link rel="stylesheet" href="assets/stylesheet/contact.css" media="all"/>
         <script src="assets/scripts/index.js" defer></script>
         <title>T&A Final project</title>
     </head>
@@ -30,32 +30,50 @@
                     </nav>
                 </div>
             </header>
-            <section>
-                <h2 class="center title">Contact Us</h2>
-                <div class="flexbox">
-                    <div class="box-1">
-                        <form>
-                            <input type="text" class="first-name" placeholder= "First Name">
-                            <input type="text" class="last-name" placeholder= "First Name">
-                            <input type="text" class="email" placeholder= "Email">
-                            <textarea class="message" placeholder= "Message"></textarea>
-                        </form>
-                        <div class="center">
-                            <button class="submit">Submit</button>
+            <section class="container contact-body">
+                <div class="container">
+                    <h2 class="center title">Contact Us</h2>
+                    <div class="flexbox">
+                        <div class="box-1">
+                            <form class="contact-form">
+                                <input type="text" class="first-name" placeholder= "First Name">
+                                <input type="text" class="last-name" placeholder= "First Name" required />
+                                <input type="text" class="email" placeholder= "Email">
+                                <textarea class="message" placeholder= "Message"></textarea>
+                            </form>
+                            <div class="center">
+                                <button class="submit">Submit</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box-2 center">
-                        <h3>You could aso contact us through this social platforms</h#>
-                        <p class="center">We look forword to hearing from you</p>
-                        <ul>
-                            <li>Email: <a href="mailto: tna@streaming.com">tna@streaming.com</a></li>
-                            <li>Instagram: @TnAStreaming</li>
-                            <li>Twiter: @realInA</li>
-                            <li>Facebook: @StreamingTnA</li>
-                        </ul>
+                        <div class="box-2">
+                            <h3>You could aso contact us through this social platforms</h3>
+                            <p class="center">We look forword to hearing from you</p>
+                            <ul>
+                                <li class="center">
+                                    Email: 
+                                    <a href="mailto: tna@streaming.com">tna@streaming.com</a>
+                                </li>
+                                <li class="center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram: @TnAStreaming
+                                </li>
+                                <li class="center">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook: @StreamingTnA
+                                </li>
+                                <li class="center">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    Twiter: @realInA
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="container message-response">
+                <h3>Thank you for your feedback</h3>
+                <p>We will respond to your questions as soon as possible</p>
+            </div> -->
             </section>
             <footer>
                 <div class="container flexbox">

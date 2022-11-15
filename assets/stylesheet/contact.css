@@ -1,12 +1,10 @@
 @import "./base.css";
 
-section.contact-page{
-    background-color: #eef0f2;
-}
-
-section.contact-page{
+.contact-body{
     height: calc(100vh - 158px);
     width: 100%;
+    background-color: #eef0f2;
+    padding-top: 50px;
 }
 
 .center{
@@ -15,25 +13,18 @@ section.contact-page{
     align-items: center;
 }
 
-.title{
-    margin-top: 50px;
-}
+/*contact form*/
 
 .box-1{
     width: calc(50% - 40px);
     margin-top: calc(50vh - 250px);
 }
 
-.box-2{
-    width: calc(50% - 40px);
-    margin-top: calc(50vh - 250px);
-}
-
-form{
+.contact-form{
     width: 100%;
 }
 
-input{
+.first-name, .last-name, .email{
     border-bottom: 1px solid rgba(238, 198, 67, 0.2);
     border-radius: 2px;
     height: 30px;
@@ -61,13 +52,29 @@ input{
     font-weight: 400;
     margin-top: 10px;
     text-align: left;
-    background: none;
     border-bottom: 1px solid rgba(238, 198, 67, 0.2);
     resize: none;
 }
 
-button{
+.submit{
     margin-top: 20px;
     width: 70px;
     height: 45px;
 }
+
+/*Side text*/
+
+.box-2{
+    width: calc(50% - 40px);
+    margin-top: calc(50vh - 250px);
+}
+
+h2{
+    font-size: var(--app-h2-font-size);
+}
+
+p{
+    font-size:  var(--app-p-font-size);
+}
+
+/*respont message*/
