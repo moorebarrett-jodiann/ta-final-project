@@ -2,7 +2,31 @@
 @import "./products.css";
 
 /**************************************************/
-/*****      HEADER AND NAV                   ******/
+/*****      LOGO                             ******/
+/**************************************************/
+
+h1 .company-logo {
+    font-family: 'Megrim', cursive;
+    font-size: 40px;
+    font-style: italic;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-right: 5px;
+}
+
+.wave {
+    background-color: var(--app-yellow);
+    width: 62%;
+    height: 2%;
+    border-radius: 50px;
+    position: relative;
+    top: -24%;
+    left: 38%;
+}
+
+/**************************************************/
+/*****      HERO BANNER                      ******/
 /**************************************************/
 
 .hero {
@@ -27,13 +51,3 @@
     background-size: cover;
     z-index: -1;
 }
-
-h1 .company-logo {
-    font-family: 'Megrim', cursive;
-    font-size: 40px;
-    font-style: italic;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-

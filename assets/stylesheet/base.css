@@ -63,7 +63,7 @@
 
 .sub-heading h2 {
     padding: 20px 0px;
-    color: var(--app-dark-blue);    
+    color: var(--app-dark-blue);
     font-size: var(--app-h2-font-size);
     font-weight: var(--app-h2-font-weight);
     text-transform: uppercase;
@@ -109,12 +109,14 @@ span.sub-heading-line {
 /**************************************************/
 
 header {
-    line-height: var(--app-header-line-height);
-    height: 56px;
     background-color: var(--app-dark-blue);
 }
 
-header h1 {
+header .logo {
+    line-height: 80px;
+}
+
+header .logo h1 {
     text-transform: uppercase;
     font-size: var(--app-h1-font-size);
     font-weight: var(--app-h1-font-weight);
@@ -126,6 +128,10 @@ header h1 {
 
     .burger-menu i {
         display: none;
+    }
+
+    nav {
+        line-height: 100px;
     }
     
     nav ul {
@@ -141,37 +147,19 @@ header h1 {
     }
     
     nav ul li a {
-        font-size: var(--app-main-font-size);
+        font-size: 16px;
         font-weight: 600;
-        letter-spacing: var(--app-letter-spcaing);
+        letter-spacing: var(--app-letter-spacing);
+        text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
         color: var(--app-white);
         position: relative;
-    }
-
-    /* Scale from center */
-    nav ul li a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0.1em;
-        background-color: var(--app-white);
-        opacity: 0;
-        transition: opacity 300ms, transform 300ms;
-    }
-
-    nav ul li a::after {
-        opacity: 1;
-        transform: scale(0);
-        transform-origin: center;
+        transition: all 0.4s ease-in-out;
     }
     
-    nav ul li a:hover::after,
-    nav ul li a:focus::after{
-        transform: scale(1);
+    nav ul li a:hover{
+        color: var(--app-yellow);
     }
 }
 
@@ -184,8 +172,9 @@ header h1 {
     .burger-menu {
         display: block;
         color: var(--app-white);
-        font-size: var(--app-main-font-size);
-        line-height:  var(--app-line-height);
+        font-size: var(--app-p-font-size);
+        line-height: var(--app-header-line-height);
+        transition: all 0.4s ease-in-out;
     }
     
     .burger-menu:hover {

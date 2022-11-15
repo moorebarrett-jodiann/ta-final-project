@@ -5,7 +5,7 @@
 
 .projects-container {
     text-align: left;
-    padding: 40px 0px;
+    padding: 60px 0px;
     background-color: var(--app-light-text-color);
 }
 
@@ -40,11 +40,7 @@
 .projects-container .row .card div.top {
     flex: 1;
 }
-  
-/* .projects-container .row .card div.top div + div {
-    border-top: 1px solid rgb(225, 225, 226);
-} */
-  
+    
 .projects-container .row .card .bottom {
     flex: none;
     text-align: center;
