@@ -108,6 +108,10 @@ span.sub-heading-line {
 /*****      HEADER and NAV                   ******/
 /**************************************************/
 
+.navigation {
+    z-index: 100;
+}
+
 header {
     background-color: var(--app-dark-blue);
 }
