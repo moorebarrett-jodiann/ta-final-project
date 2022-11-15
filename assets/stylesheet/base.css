@@ -104,12 +104,12 @@ span.sub-heading-line {
     cursor: pointer;
 }
 
-.btn button {
+/* .btn button {
     font-size: var(--app-p-font-size);
     font-weight: 600;
     color: var(--app-dark-blue);
     text-decoration: none;
-}
+} */
 
 /**************************************************/
 /*****      HEADER and NAV                   ******/
