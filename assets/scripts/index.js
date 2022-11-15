@@ -12,22 +12,15 @@ const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 validate.addEventListener('click', () =>{
     if (firstName.value == ""){
         alert('Please add your First Name');
-    }
-    
-    if (lastName.value == ""){
+    } else if (lastName.value == ""){
         alert('Please add your Last Name');
-    }
-    
-    if(email.length === 0) {
+    } else if(email.length === 0) {
         alert('Please enter your email');
-    }
-    else if(!emailRegex.test(email)) {
+    } else if(!emailRegex.test(email)) {
         alert('Please enter a valid email');
-    }
-    else if(message.value == ""){
+    } else if(message.value == ""){
         alert('Please add your message')
-    }
-    else{
+    } else{
         alert('message has been sent')
     }
 });
