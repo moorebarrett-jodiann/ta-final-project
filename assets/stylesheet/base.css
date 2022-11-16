@@ -256,7 +256,7 @@ footer ul li + li {
 footer ul li a {
     font-size: var(--app-h3-font-size);
     font-weight: 600;
-    letter-spacing: var(--app-letter-spcaing);
+    letter-spacing: var(--app-letter-spacing);
     cursor: pointer;
     text-decoration: none;
     color: var(--app-white);
