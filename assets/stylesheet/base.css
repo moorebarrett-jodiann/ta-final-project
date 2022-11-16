@@ -254,13 +254,18 @@ footer ul li + li {
 }
 
 footer ul li a {
-    font-size: var(--app-main-font-size);
+    font-size: var(--app-h3-font-size);
     font-weight: 600;
     letter-spacing: var(--app-letter-spcaing);
     cursor: pointer;
     text-decoration: none;
     color: var(--app-white);
     position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: var(--app-yellow);
 }
 
 footer p {
