@@ -3,7 +3,7 @@
 /**************************************************/
 
 .contact-body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #eef0f2;
     padding: 40px 0px;
