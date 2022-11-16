@@ -13,10 +13,23 @@
     margin: 40px 0px;
 }
 
+
+/* flex cards with screen width 480px and down */
+@media (max-width: 480px) {
+    .contact-body .row .card + .card {
+        border-top: 1px solid rgb(225, 225, 226);
+        margin-top: 20px;
+    }
+    
+    .contact-body .row .card + .card > * {
+        margin: 10px 0px;
+    } 
+}
+
 .contact-body .row .card {
     display: grid;
     place-items: center;
-    min-width: 460px;
+    min-width: 300px;
     height: 300px;
     padding: 25px 15px;
 }

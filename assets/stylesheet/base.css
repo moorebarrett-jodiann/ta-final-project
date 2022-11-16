@@ -118,7 +118,7 @@ span.sub-heading-line {
 
 header {
     background-color: var(--app-dark-blue);
-    min-width: 400px;
+    min-width: 300px;
 }
 
 header .logo {
@@ -127,7 +127,6 @@ header .logo {
 
 header .logo h1 {
     text-transform: uppercase;
-    font-size: var(--app-h1-font-size);
     font-weight: var(--app-h1-font-weight);
     color: var(--app-white);
 }
@@ -138,6 +137,10 @@ header .logo h1 a {
 
 /* Show reular nav menu when screen width is 923px and above */
 @media only screen and (min-width: 923px) { 
+
+    header .logo h1 {
+        font-size: var(--app-h1-font-size);
+    }
 
     .burger-menu i {
         display: none;
@@ -178,6 +181,11 @@ header .logo h1 a {
 
 /* Show hamburger icon when screen width is below 922px */
 @media only screen and (max-width: 922px) {
+
+    header .logo h1 {
+        font-size: var(--app-h2-font-size);
+    }
+
     nav {
         display: none;
     }
