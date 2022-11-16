@@ -99,6 +99,10 @@ span.sub-heading-line {
     text-decoration: none;
 }
 
+.btn + .btn {
+    margin-left: 10px;
+}
+
 .btn:hover { 
     background-color: var(--app-yellow-hover);
     cursor: pointer;
