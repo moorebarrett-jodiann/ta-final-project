@@ -17,7 +17,6 @@
 /* flex cards with screen width 480px and down */
 @media (max-width: 480px) {
     .contact-body .row .card + .card {
-        border-top: 1px solid rgb(225, 225, 226);
         margin-top: 20px;
     }
     
