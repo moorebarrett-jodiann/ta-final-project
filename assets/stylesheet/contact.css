@@ -16,6 +16,8 @@
 .contact-body .row .card {
     display: grid;
     place-items: center;
+    min-width: 460px;
+    height: 300px;
 }
 
 .contact-body .row .card .social-icons {
