@@ -1,6 +1,6 @@
 # T&A Streaming
 
-## Tools and Automation Final Project
+## Streaming Website using Vanilla JavaScript
 
 ### Contributors:
 
