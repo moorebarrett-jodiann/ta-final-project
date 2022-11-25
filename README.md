@@ -1,6 +1,6 @@
 # T&A Streaming
 
-## Streaming Website using Vanilla JavaScript
+## Static Website using Vanilla JavaScript
 
 ### Contributors:
 
