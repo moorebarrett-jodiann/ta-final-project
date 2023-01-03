@@ -29,4 +29,4 @@ ENJOY!!
 This application is not officially commissioned or supported.
 The trademark "T&A" is not registered.
 
-Click [here]( https://moorebarrett-jodiann.github.io/ta-final-project/) to experience true entertainment.
+Click [here]( https://moorebarrett-jodiann.github.io/ta-streaming/) to experience true entertainment.
